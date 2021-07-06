@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 65px;
+  padding: 0 20px;
+  border : 30px solid transparent; /*g*/
+  box-sizing: border-box;/*g*/
+  box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%), 0px 2px 4px -1px rgb(0 0 0 / 20%);/*g*/
+  line-height: 27px;/*g*/
+  font-family: Roboto, RobotoDraft, Arial, sans-serif;/*g*/
+}
+
+.nav > * {
+  padding-right: 30px;
+  
+}
+
+.nav .nav-logo {
+  color: #99cc00;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.nav a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+
+.main {
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.titleLink:hover {
+  text-decoration: none;
+}
+
+.sidebar:hover {
+  color:blue
+
+}
+
+div:focus {
+  background-color:lightblue
+}
+
+.imga {
+  width: 30%;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
