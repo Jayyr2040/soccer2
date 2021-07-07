@@ -49,7 +49,7 @@ const News = (props) => {
          
           <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap'}}>
           <Link to={{pathname: "/headlines/FullNews/", data: { props } }}>
-          <CollectionsIcon style={{fontSize:"18px"}}/> <h4>View Full Coverage</h4>
+          <CollectionsIcon style={{fontSize:"18px"}}/> <h5>View Full Coverage</h5>
           </Link>
           </div>
       </div>

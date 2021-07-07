@@ -7,20 +7,30 @@ import About from './About';
 import FullHighlightsList from './FullHighlightsList';
 import FullNews from './FullNews';
 import Search from './Search';
+import SideBar from './SideBar';
+import Favourites from './Favourites';
 
 
 function Main() {
 
     return (
         <main>
+            <div style={{display:"flex"}}>
+            <div style={{ border:"1px solid #e3dcdc", width:"20%"}}>
+            <SideBar/>
+            </div>
+            <div style={{ border:"1px solid #e3dcdc", width:"80%"}} >
             <Switch>
                 <Route exact path={Webpage.headlines} component={Headlines}/>
                 <Route exact path={Webpage.search} component={Search}/>
+                <Route exact path={Webpage.favourites} component={Favourites}/>
                 <Route exact path={Webpage.news} component={FullNews}/>
                 <Route exact path={Webpage.highlights} component={FullHighlightsList}/>
                 <Route path={Webpage.about} component={About}/>
                 <Redirect to={Webpage.headlines} />
             </Switch>
+            </div>
+            </div>
         </main>
     )
 }

@@ -65,10 +65,13 @@ a.titleLink:hover {
   text-decoration: none;
 }
 
+
+
 .sidebar:hover {
   color:blue
 
 }
+
 
 div:focus {
   background-color:lightblue

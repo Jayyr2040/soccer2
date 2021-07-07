@@ -3,6 +3,7 @@ const Webpage = {
     highlights: '/headlines/fullHighlightsList/',
     news: '/headlines/fullNews/',
     search: '/headlines/search/',
+    favourites: '/headlines/favourites/',
     about: '/about/',
 }
 

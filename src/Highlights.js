@@ -64,7 +64,7 @@ const Highlights = (props) => {
           </ul>
         <div style={{ border: "1px solid #e3dcdc", color:"blue"}}>
           <Link to={{pathname: "/headlines/FullHighlightsList/", data: { props } }}>
-          <CollectionsIcon style={{fontSize:"18px"}}/><h4>View Full Highlights list</h4>
+          <CollectionsIcon style={{fontSize:"18px"}}/><h5>View Full Highlights list</h5>
           </Link>
         </div>
       </div>
