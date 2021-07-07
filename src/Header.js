@@ -16,21 +16,22 @@ const titleColored = titleArr.map((item,index) => {
 
     return (
         <>
-            <div className="nav-item"><span className="nav-logo">
+            <div className="nav-item" style={{width: "18%",border: "1px solid #e3dcdc" }}><span className="nav-logo">
                 <Link to={Webpage.headlines} className="titleLink">
                     {colorMyWord("MySoccer")}
                 </Link>
                 </span>
             </div>
-            <div className="nav-item"><span className="nav-logo">
+            <div className="nav-item" style={{width: "10%" ,border: "1px solid #e3dcdc"}}><span className="nav-logo">
                 <Link to={Webpage.about} className="titleLink">
                     {colorMyWord("About")}
                 </Link>
                 </span>
             </div>
-            <div className="nav-item">
+            <div className="nav-item" style={{width: "50%",border: "1px solid blue" , marginLeft:"100px" }}>
                 <Form/>
             </div>
+    
         </>
     );
 }

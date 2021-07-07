@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import CollectionsIcon from '@material-ui/icons/Collections';
 
 const News = (props) => {
-
  window.scrollTo(0, 0)
 
   const articles = (props, counter) => {
@@ -45,13 +44,13 @@ const News = (props) => {
               {articles(props, 0)}
               {articles(props, 1)}
           </ul>
-        <div style={{ border: "1px solid #e3dcdc", color:"blue"}}>
-         
-          <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap'}}>
+        <div style={{ border: "1px solid green", color:"blue"}}>
+          
           <Link to={{pathname: "/headlines/FullNews/", data: { props } }}>
-          <CollectionsIcon style={{fontSize:"18px"}}/> <h5>View Full Coverage</h5>
+          <CollectionsIcon style={{fontSize:"18px"}}/>
+         <h5>View Full Coverage</h5>
           </Link>
-          </div>
+         
       </div>
       </div>
     </>

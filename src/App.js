@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-        <div className="nav">
+        <div className="nav" style={{border: "1px solid blue"}}>
         <Header/>
        </div>  
         <Main/> 

@@ -16,10 +16,10 @@ function Main() {
     return (
         <main>
             <div style={{display:"flex"}}>
-            <div style={{ border:"1px solid #e3dcdc", width:"20%"}}>
+            <div style={{width:"15%",border:"1px solid red"}}>
             <SideBar/>
             </div>
-            <div style={{ border:"1px solid #e3dcdc", width:"80%"}} >
+            <div style={{ border:"1px solid #e3dcdc", width:"85%"}} >
             <Switch>
                 <Route exact path={Webpage.headlines} component={Headlines}/>
                 <Route exact path={Webpage.search} component={Search}/>
