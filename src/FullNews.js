@@ -1,11 +1,14 @@
 import React from 'react';
 import Moment from 'react-moment';
+import newsData from './staticData';
 
 function FullNews(props) {
     console.log("Full News Coverage",props.location.data?.props.news);
+    console.log("Fake full news coverage", newsData.news);
     window.scrollTo(0, 0)
+    const cNewsData = (props.location.data?.props.news.articles.length > 0? props.location.data?.props.news :newsData[props.location.data?.props.count].news)  ;
 
-    let list = (props.location.data?.props.news.articles).map((item,index) => {
+    let list = (cNewsData.articles).map((item,index) => {
         return (
                     <div key={index} style={{display: "flex",flexWrap: "wrap",flexDirection: "row", borderRadius:"10px",border: "1px solid #e3dcdc", width: "48%", height: "150px", marginBottom: "1rem", marginRight: "1em"}}>
                     <div style={{width:"69%",marginTop: "10px"}}>

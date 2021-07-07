@@ -31,7 +31,7 @@ function Headlines() {
             <div style={{ border:"1px solid #e3dcdc", width:"100%"}}>
             <ApiCall url={WebUrl.highlights} handleApiCall={handleApiCall} isFirstLoad={isFirstLoad}/>
             <ApiCall url={WebUrl.headlines} handleApiCall={handleApiCallNews} isFirstLoad={isFirstLoadNews}/>
-            <News news={news} url={WebUrl.headlines}/>
+            <News news={news} url={WebUrl.headlines} count={0}/>
             <span style={{ display: "block", width: "100px" }}></span>
             <Highlights highlights={highlights}/>
             </div>

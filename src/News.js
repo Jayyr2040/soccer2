@@ -2,9 +2,16 @@ import Moment from "react-moment";
 //import Webpage from "./Webpage";
 import { Link } from "react-router-dom";
 import CollectionsIcon from '@material-ui/icons/Collections';
+import newsData from "./staticData";
 
 const News = (props) => {
- window.scrollTo(0, 0)
+ window.scrollTo(0, 0);
+ console.log("props news status - ",props?.news);
+ console.log("props url status - ",props?.url);
+ console.log("props length status - ", props?.news.length);
+ console.log("fake data -", newsData[props?.count]);
+ const cNewsData = {news : (props?.news?.articles?.length > 0? {...props?.news} : newsData[props?.count].news), url :(props?.news?.articles?.length > 0? props?.url :newsData[props?.count].url)}  ;
+ console.log("cNews - ",cNewsData )
 
   const articles = (props, counter) => {
     return (
@@ -37,16 +44,16 @@ const News = (props) => {
   return (
     <>
       <div>
-        <h3>Headlines <span style={{fontWeight: "normal"}}>({((props?.url.slice(props?.url.lastIndexOf('=') + 1).split('+')).map(item=>(item.charAt(0).toUpperCase()+item.substr(1)))).join(" ")})</span></h3>
+        <h3>Headlines <span style={{fontWeight: "normal"}}>({((cNewsData?.url.slice(cNewsData?.url.lastIndexOf('=') + 1).split('+')).map(item=>(item.charAt(0).toUpperCase()+item.substr(1)))).join(" ")})</span></h3>
       </div>
       <div style={{ border: "1px solid #e3dcdc",borderRadius:"10px" , alignContent:"flex-start", justifyContent:"start-end", flexFlow: "column wrap", display:"flex"}}>
           <ul>
-              {articles(props, 0)}
-              {articles(props, 1)}
+              {articles(cNewsData , 0)}
+              {articles(cNewsData, 1)}
           </ul>
         <div style={{ border: "1px solid green", color:"blue"}}>
           
-          <Link to={{pathname: "/headlines/FullNews/", data: { props } }}>
+          <Link to={{pathname: "/headlines/FullNews/", data: {props } }}>
           <CollectionsIcon style={{fontSize:"18px"}}/>
          <h5>View Full Coverage</h5>
           </Link>

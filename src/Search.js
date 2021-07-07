@@ -33,7 +33,7 @@ function Search(props) {
             <div style={{ border:"1px solid #e3dcdc", width:"100%"}}>
             <ApiCall url={WebUrl.highlights} handleApiCall={handleApiCall} isFirstLoad={isFirstLoad}/>
             <ApiCall url={queryUrl} handleApiCall={handleApiCallSearch} isFirstLoad={isFirstLoadSearch}/>
-            <News news={search} url={queryUrl} />
+            <News news={search} url={queryUrl}  count={2} />
             <span style={{ display: "block", width: "100px" }}></span>
             <Highlights highlights={highlights}/>
             </div>
