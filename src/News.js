@@ -10,7 +10,8 @@ const News = (props) => {
  console.log("props url status - ",props?.url);
  console.log("props length status - ", props?.news.length);
  console.log("fake data -", newsData[props?.count]);
- const cNewsData = {news : (props?.news?.articles?.length > 0? {...props?.news} : newsData[props?.count].news), url :(props?.news?.articles?.length > 0? props?.url :newsData[props?.count].url)}  ;
+ // const cNewsData = {news : (props?.news?.articles?.length > 0? {...props?.news} : newsData[props?.count].news), url :(props?.news?.articles?.length > 0? props?.url :newsData[props?.count].url)}  ;
+ const cNewsData = {news : ( ((typeof (props?.news?.articles) !== 'undefined') &&  (props?.news?.articles?.length > 0)) ? {...props?.news} : newsData[props?.count].news), url :(typeof (props?.news?.articles) !== 'undefined'? props?.url :newsData[props?.count].url)}  ;
  console.log("cNews - ",cNewsData )
 
   const articles = (props, counter) => {
