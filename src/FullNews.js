@@ -4,9 +4,9 @@ import newsData from './staticData';
 
 function FullNews(props) {
     console.log("Full News Coverage",props.location.data?.props.news);
-    console.log("Fake full news coverage", newsData.news);
+    console.log("Fake full news coverage", newsData[(props.location.data?.props.count)].news);
     window.scrollTo(0, 0)
-    const cNewsData = (props.location.data?.props.news.articles.length > 0? props.location.data?.props.news :newsData[props.location.data?.props.count].news)  ;
+    const cNewsData = ((props.location.data?.props?.news.articles.length > 0) ? props.location.data?.props.news :newsData[props.location.data?.props.count].news)  ;
 
     let list = (cNewsData.articles).map((item,index) => {
         return (
