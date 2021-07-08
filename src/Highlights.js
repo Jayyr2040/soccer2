@@ -11,8 +11,8 @@ const Highlights = (props) => {
     return (
       <>
       <li>
-        <div style={{flexDirection: "row", display: "flex", height: "300px",width:"100vw"}}>
-        <div style={{width:"40%"}}>
+        <div style={{flexDirection: "row", display: "flex", height: "300px",width:"100%"}}>
+        <div style={{width:"50%"}}>
             <h4> Match: {props?.highlights?.[counter]?.title}</h4>
             <span style={{ display: "block", width: "20px" }}></span>
             <div style={{fontSize:"12px"}}>
@@ -25,10 +25,10 @@ const Highlights = (props) => {
             Published:
             <span style={{ display: "inline-block", width: "5px" }}></span>
             {<Moment fromNow>{props?.highlights?.[counter]?.date}</Moment>}
-            {/* <span style={{ display: "inline-block", width: "400px" }}></span> */}
+            <span style={{ display: "inline-block", width: "800px" }}></span>
             </div>
         </div>
-        <div style={{border: "1px solid #e3dcdc", width:"41%",borderRadius:"10px"}}>
+        <div style={{border: "1px solid #e3dcdc", width:"50%",borderRadius:"10px"}}>
             <div style={{height:"100%"}}>
                 <iframe
                     src={props?.highlights?.[counter]?.embed?.match(urlRegex)[1]}
