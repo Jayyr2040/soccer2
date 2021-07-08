@@ -12,7 +12,7 @@ function FullNews(props) {
         return (
                     <div className="borderOrange fnews1" key={index}>
                     <div className="fnews2">
-                    <a href={item?.url}><span> News: {item?.title}</span></a>
+                    <a href={item?.url} target="_blank" rel="noreferrer"><span> News: {item?.title}</span></a>
                     <span className="fnews3"></span>
                     <p className="fnews4"> 
                     Source: {item?.source?.name}

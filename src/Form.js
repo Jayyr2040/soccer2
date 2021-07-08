@@ -12,14 +12,14 @@ return (
             <div className='form2'>
                     {/* <Link to={{pathname: "/headlines/Search/", data: { query } }}> */}
                     <Link to={`/headlines/Search/${query}`}>
-                    <div className='form3'><Search className='form4'/></div> 
+                    <div className='form3'><Search className='form4 form8'/></div> 
                     </Link>
             </div> 
             <div className='form5'>
                     <input className='form6' value={query} placeholder="Enter football club or figures?" type="text" onChange={(event) => {setQuery(event.target.value); console.log("Onchange - ",event.target.value);}}/>
             </div>
             <div className='form7'>
-                    <ClearIcon onClick={()=> {setQuery("")}} />
+                    <ClearIcon className='form8' onClick={()=> {setQuery("")}} />
             </div>
     </div>
 

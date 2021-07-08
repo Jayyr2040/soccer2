@@ -18,7 +18,7 @@ const News = (props) => {
         <li>
         <div className="news1">
         <div className="news2">
-              <a href={props?.news?.articles?.[counter]?.url} ><h4> News: {props?.news?.articles?.[counter]?.title}</h4></a>
+              <a href={props?.news?.articles?.[counter]?.url}  target="_blank" rel="noreferrer"><h4> News: {props?.news?.articles?.[counter]?.title}</h4></a>
               <span className="news3"></span>
               <p className="news4"> 
               Source: {props?.news?.articles?.[counter]?.source?.name}
@@ -51,8 +51,8 @@ const News = (props) => {
               {articles(cNewsData, 1)}
           </ul>
         <div className="news11">
+            <div><CollectionsIcon className="news12"/></div>
             <Link to={{pathname: "/headlines/FullNews/", data: {props } }}>
-            <CollectionsIcon className="news12"/>
             <div className="news13">View Full Coverage</div>
             </Link>
       </div>

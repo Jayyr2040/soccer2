@@ -63,8 +63,8 @@ const Highlights = (props) => {
             {articles(props, 2)}
           </ul>
         <div className="highlights11">
-          <Link to={{pathname: "/headlines/FullHighlightsList/", data: { props } }}>
           <CollectionsIcon className="highlights12"/>
+          <Link to={{pathname: "/headlines/FullHighlightsList/", data: { props } }}>
           <div className="highlights13">View Full Highlights list</div>
           </Link>
         </div>
