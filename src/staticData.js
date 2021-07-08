@@ -79,7 +79,7 @@ const newsData = [
             }
             ]
         },
-    url: WebUrl.search,
+    url: WebUrl.search+'pogba',
     }
 
 ]

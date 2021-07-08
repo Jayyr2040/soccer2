@@ -22,7 +22,8 @@ function Main() {
             <div  className="borderGrey" style={{width:"85%"}} >
             <Switch>
                 <Route exact path={Webpage.headlines} component={Headlines}/>
-                <Route exact path={Webpage.search} component={Search}/>
+                <Route exact path={`${Webpage.search}:query`} children={<Search/>}/>
+                {/* <Route exact path={Webpage.search} component={Search}/> */}
                 <Route exact path={Webpage.favourites} component={Favourites}/>
                 <Route exact path={Webpage.news} component={FullNews}/>
                 <Route exact path={Webpage.highlights} component={FullHighlightsList}/>

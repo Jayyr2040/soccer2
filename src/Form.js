@@ -10,7 +10,8 @@ const Form = () => {
 return (
     <div style={{display:"flex", alignItems:"center", background: "#f1f3f4",height:"48px",borderRadius:"10px",width:"100%",position: "relative"}}> 
     <div style={{width:"10%"}}>
-    <Link to={{pathname: "/headlines/Search/", data: { query } }}>
+    {/* <Link to={{pathname: "/headlines/Search/", data: { query } }}> */}
+    <Link to={`/headlines/Search/${query}`}>
     <div style={{textAlign:"center", verticalAlign:"middle"}}><Search style={{verticalAlign:"middle"}}/></div> 
     </Link>
     </div> 
