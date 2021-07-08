@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-        <div className="nav" style={{border: "1px solid blue"}}>
+        <div className="nav" style={{border: "1px solid blue",width:"100%"}}>
         <Header/>
        </div>  
         <Main/> 

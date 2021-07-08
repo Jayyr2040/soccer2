@@ -1,5 +1,4 @@
 import Moment from "react-moment";
-//import Webpage from "./Webpage";
 import { Link } from "react-router-dom";
 import CollectionsIcon from '@material-ui/icons/Collections';
 import newsData from "./staticData";
@@ -10,7 +9,6 @@ const News = (props) => {
  console.log("props url status - ",props?.url);
  console.log("props length status - ", props?.news.length);
  console.log("fake data -", newsData[props?.count]);
- // const cNewsData = {news : (props?.news?.articles?.length > 0? {...props?.news} : newsData[props?.count].news), url :(props?.news?.articles?.length > 0? props?.url :newsData[props?.count].url)}  ;
  const cNewsData = {news : ( ((typeof (props?.news?.articles) !== 'undefined') &&  (props?.news?.articles?.length > 0)) ? {...props?.news} : newsData[props?.count].news), url :(typeof (props?.news?.articles) !== 'undefined'? props?.url :newsData[props?.count].url)}  ;
  console.log("cNews - ",cNewsData )
 
@@ -22,7 +20,7 @@ const News = (props) => {
         <div style={{width:"78%"}}>
             <a href={props?.news?.articles?.[counter]?.url} ><h4> News: {props?.news?.articles?.[counter]?.title}</h4></a>
             <span style={{ display: "block", width: "20px" }}></span>
-            <p style={{fontSize :"12px"}}> 
+            <p style={{fontSize :"12px", border: "1px solid #e3dcdc"}}> 
             Source: {props?.news?.articles?.[counter]?.source?.name}
             <span style={{ display: "inline-block", width: "10px" }}></span>
             .
@@ -53,10 +51,9 @@ const News = (props) => {
               {articles(cNewsData, 1)}
           </ul>
         <div style={{ border: "1px solid green", color:"blue"}}>
-          
           <Link to={{pathname: "/headlines/FullNews/", data: {props } }}>
-          <CollectionsIcon style={{fontSize:"18px"}}/>
-         <h5>View Full Coverage</h5>
+          <CollectionsIcon style={{fontSize:"18px", border: "1px solid red"}}/>
+         <div style={{fontSize:"15px",border: "1px solid red"}}>View Full Coverage</div>
           </Link>
          
       </div>

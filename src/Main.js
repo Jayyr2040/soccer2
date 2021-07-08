@@ -15,7 +15,7 @@ function Main() {
 
     return (
         <main>
-            <div style={{display:"flex"}}>
+            <div style={{display:"flex", width:"100%"}}>
             <div style={{width:"15%",border:"1px solid red"}}>
             <SideBar/>
             </div>

@@ -1,7 +1,7 @@
 const ApiCall = (props) => {
     console.log(props.url);
     console.log(props.isFirstLoad);
-    
+   
     if (props.isFirstLoad && props.url !== "" ) {
     const makeAPICall = async () => {
         const response = await fetch(props.url);
