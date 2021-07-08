@@ -11,25 +11,25 @@ const Highlights = (props) => {
     return (
       <>
       <li>
-        <div style={{flexDirection: "row", display: "flex", height: "350px",width:"100%"}}>
-        <div style={{width:"50%"}}>
+        <div className="highlights1">
+        <div className="highlights2">
             <h4> Match: {props?.highlights?.[counter]?.title}</h4>
-            <span style={{ display: "block", width: "20px" }}></span>
-            <div style={{fontSize:"12px"}}>
+            <span className="highlights3"></span>
+            <div className="highlights4">
             Competition: {props?.highlights?.[counter]?.competition?.name}
-            <span style={{ display: "inline-block", width: "10px" }}></span>
+            <span className="highlights5"></span>
             </div>
-            <div style={{fontSize:"12px"}}>
+            <div className="highlights4">
             .
-            <span style={{ display: "inline-block", width: "5px" }}></span>
+            <span className="highlights6"></span>
             Published:
-            <span style={{ display: "inline-block", width: "5px" }}></span>
+            <span className="highlights6"></span>
             {<Moment fromNow>{props?.highlights?.[counter]?.date}</Moment>}
-            <span style={{ display: "inline-block", width: "800px" }}></span>
+            <span className="highlights7"></span>
             </div>
         </div>
-        <div style={{border: "1px solid #e3dcdc", width:"50%",borderRadius:"10px"}}>
-            <div style={{height:"100%"}}>
+        <div className="borderGrey highlights8">
+            <div className="highlights9">
                 <iframe
                     src={props?.highlights?.[counter]?.embed?.match(urlRegex)[1]}
                     frameBorder="0"
@@ -42,7 +42,6 @@ const Highlights = (props) => {
                     left= "0"
                     bottom= "0"
                     right= "0"
-                  
                 ></iframe>
               </div>
         </div>
@@ -57,16 +56,16 @@ const Highlights = (props) => {
       <div>
         <h3>Soccer highlights</h3>
       </div>
-      <div className="borderOrange" style={{borderRadius:"10px", alignContent:"flex-start", justifyContent:"start-end", flexFlow: "column wrap", display:"flex",position: "relative",overflow: "auto"}}>
+      <div className="borderOrange highlights10">
           <ul>
             {articles(props, 0)}
             {articles(props, 1)}
             {articles(props, 2)}
           </ul>
-        <div style={{ color:"blue"}}>
+        <div className="highlights11">
           <Link to={{pathname: "/headlines/FullHighlightsList/", data: { props } }}>
-          <CollectionsIcon style={{fontSize:"18px"}}/>
-          <div style={{fontSize:"15px"}}>View Full Highlights list</div>
+          <CollectionsIcon className="highlights12"/>
+          <div className="highlights13">View Full Highlights list</div>
           </Link>
         </div>
       </div>

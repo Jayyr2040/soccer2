@@ -11,7 +11,6 @@ function Favourites() {
   const [isFirstLoad, setFirstLoad] = React.useState(true);
   const [isFirstLoadNews, setFirstLoadNews] = React.useState(true);
 
-
   const handleApiCall = (data) => {
       setFirstLoad(false);
      // console.log("First Load Highlights - ", isFirstLoad);
@@ -24,18 +23,15 @@ function Favourites() {
       setNews(data);
   };
 
-
   return (
-    <>
-        
-            <div style={{width:"100%"}}>
-            <ApiCall url={WebUrl.highlights} handleApiCall={handleApiCall} isFirstLoad={isFirstLoad}/>
-           <ApiCall url={WebUrl.favourites} handleApiCall={handleApiCallNews} isFirstLoad={isFirstLoadNews}/>
-            <News news={news} url={WebUrl.favourites}  count={1}/>
-            <span style={{ display: "block", width: "100px" }}></span>
-            <Highlights highlights={highlights}/>
+    <> 
+            <div className="favourites1">
+                <ApiCall url={WebUrl.highlights} handleApiCall={handleApiCall} isFirstLoad={isFirstLoad}/>
+                <ApiCall url={WebUrl.favourites} handleApiCall={handleApiCallNews} isFirstLoad={isFirstLoadNews}/>
+                <News news={news} url={WebUrl.favourites}  count={1}/>
+                <span className="favourites2"></span>
+                <Highlights highlights={highlights}/>
             </div>
-    
     </>
   );
 }

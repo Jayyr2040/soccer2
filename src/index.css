@@ -66,12 +66,10 @@ a.titleLink:hover {
 }
 
 
-
 .sidebar:hover {
   color:blue
 
 }
-
 
 div:focus {
   background-color:lightblue
@@ -104,3 +102,346 @@ textarea:focus, input:focus{
 .borderOrange {
   border: 2px solid orange
 }
+
+.about1 {
+  width:100%;
+  height:100vh
+}
+
+.app1 {
+  width:100%
+}
+
+.favourites1 {
+  width:100%
+}
+
+.favourites2 {
+  display: block;
+  width: 100px
+}
+
+.form1 {
+  display:flex;
+  align-items: center;
+  background: #f1f3f4;
+  height: 48px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative
+}
+
+.form2 {
+  width: 10%;
+}
+
+.form3 {
+  text-align: center;
+  vertical-align: middle
+}
+
+.form4 {
+  vertical-align:middle
+}
+
+.form5 {
+  width:70%
+}
+
+.form6 {
+  background: transparent;
+  border: 0px;
+  width: 100%
+}
+
+.form7 {
+  width:5%;
+  position: absolute;
+  right: 20px; 
+  padding-top: 10px;
+  cursor: pointer
+}
+
+.fhighlights1 {
+  width:20%;
+  height:300px; 
+  margin:5px; 
+  cursor:pointer;
+  border-radius:10px
+}
+
+.fhighlights2 {
+  height:30%; 
+}
+
+.fhighlights3 {
+  height:68%; 
+}
+
+.fhighlights4 {
+  background:yellow;
+  border-radius:10px; 
+  height:100%
+}
+
+.fhighlights5 {
+  text-align:center;
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: center
+}
+
+.fhighlights6 {
+  text-align:center;
+}
+
+.fhighlights7 {
+  flex-flow: row wrap;
+  display: flex;
+  align-items: stretch; 
+  align-content: space-between;
+  justify-content: center
+}
+
+.fnews1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-radius: 10px;
+  width: 48%;
+  height: 150px;
+  margin-bottom: 1rem;
+  margin-right: 1em
+}
+
+.fnews2 {
+  width: 69%;
+  margin-top: 10px
+}
+
+.fnews3 {
+  display: block;
+  margin-bottom: 50px
+}
+
+.fnews4 {
+  color:grey;
+  font-size: 12px
+}
+
+.fnews5 {
+  display: inline-block;
+  width: 10px 
+}
+
+.fnews6 {
+  display: inline-block;
+  width: 5px 
+}
+
+.fnews7 {
+  width:30% 
+}
+
+.fnews8 {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  height: calc(200px * 10 + 10rem);
+  align-content: flex-start
+}
+
+.header1 {
+  width: 18%
+}
+
+.header2 {
+  width: 10%
+}
+
+.header3 {
+  width: 50%;
+  margin-left: 100px
+}
+
+.headlines1 {
+  width: 100%;
+}
+
+.headlines2 {
+  display: block;
+  width: 100px 
+}
+
+.highlights1 {
+  flex-direction: row;
+  display: flex;
+  height: 350px;
+  width: 100%
+}
+
+.highlights2 {
+  width: 50%
+}
+
+.highlights3 {
+  display: block;
+  width: 20px
+}
+
+.highlights4 {
+  font-size: 12px 
+}
+
+.highlights5 {
+  display: inline-block;
+  width: 10px
+}
+
+
+.highlights6 {
+  display: inline-block;
+  width: 5px
+}
+
+.highlights7 {
+  display: inline-block;
+  width: 800px
+}
+
+.highlights8 {
+  width: 50%;
+  border-radius: 10px
+}
+
+.highlights9 {
+  height:100%
+}
+
+.highlights10 {
+  border-radius: 10px;
+  align-content: flex-start;
+  justify-content: start-end;
+  flex-flow: column wrap;
+  display: flex;
+  position: relative;
+  overflow: auto
+}
+
+.highlights11 {
+ color:blue;
+}
+
+.highlights12 {
+  font-size: 18px
+ }
+
+ .highlights13 {
+  font-size: 15px
+ }
+
+ .main1 {
+  display:flex;
+  width: 100%
+ }
+
+ .main2 {
+  width: 15%
+ }
+
+ .main3 {
+  width: 85%
+ }
+
+ .news1 {
+  flex-direction: row;
+  display: flex;
+  height: 150px;
+}
+
+.news2 {
+  width: 78%
+}
+
+.news3 {
+  display: block;
+  width: 20px
+}
+
+.news4 {
+  font-size: 12px 
+}
+
+.news5 {
+  display: inline-block;
+  width: 10px
+}
+
+
+.news6 {
+  display: inline-block;
+  width: 5px
+}
+
+.news7 {
+  display: inline-block;
+  width: 150px
+}
+
+.news8 {
+  width: 22%;
+}
+
+.news9 {
+  font-weight:normal
+}
+
+.news10 {
+  border-radius: 10px;
+  align-content: flex-start;
+  justify-content: start-end;
+  flex-flow: column wrap;
+  display: flex;
+}
+
+.news11 {
+ color:blue;
+}
+
+.news12 {
+  font-size: 18px
+ }
+
+ .news13 {
+  font-size: 15px
+ }
+
+.search1{
+  width:100%
+}
+
+.search2{
+  display: block;
+  width: 100px 
+}
+
+.sidebar1 {
+  padding-top: 30px;
+  cursor: pointer;
+  border-radius: 0 30px 30px 0
+}
+
+.sidebar2 {
+  display: flex;
+}
+
+.sidebar3 {
+  font-size: 18px;
+}
+
+.sidebar4 {
+  padding-bottom: 8px;
+}
+
+
+

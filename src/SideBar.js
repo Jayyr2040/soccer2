@@ -9,24 +9,24 @@ const SideBar = () => {
     return(
         <>
         <Link to={Webpage.headlines} className="titleLink">
-        <div  tabIndex="1" style={{paddingTop: "30px", cursor:"pointer",borderRadius:"0 30px 30px 0"}}>
-                <div className="sidebar" style={{display:"flex"}}> 
+        <div  tabIndex="1" className="sidebar1">
+                <div className="sidebar sidebar2"> 
                     <div >
-                    <ViewHeadlineIcon style={{fontSize: "18px"}}/>
+                    <ViewHeadlineIcon className="sidebar3"/>
                     </div>
-                    <div style={{paddingBottom: "8px"}}>
+                    <div className="sidebar4">
                         Top Stories
                         </div>
                 </div>
             </div>
         </Link>
         <Link to={Webpage.favourites} className="titleLink">
-            <div  tabIndex="2" style={{paddingTop: "30px", cursor:"pointer",borderRadius:"0 30px 30px 0"}}>
-                <div className="sidebar" style={{display:"flex"}}>
+            <div  tabIndex="2" className="sidebar1">
+                <div className="sidebar sidebar2">
                 <div >
-                    <BookmarkBorderIcon style={{fontSize: "18px"}}/>
+                    <BookmarkBorderIcon className="sidebar3"/>
                     </div>
-                    <div style={{paddingBottom: "8px"}}>
+                    <div className="sidebar4">
                         Favourites
                         </div>
                 </div>

@@ -15,11 +15,11 @@ function Main() {
 
     return (
         <main>
-            <div style={{display:"flex", width:"100%"}}>
-            <div className="borderGrey" style={{width:"15%"}}>
+            <div className="main1">
+            <div className="borderGrey main2">
             <SideBar/>
             </div>
-            <div  className="borderGrey" style={{width:"85%"}} >
+            <div  className="borderGrey main3">
             <Switch>
                 <Route exact path={Webpage.headlines} component={Headlines}/>
                 <Route exact path={`${Webpage.search}:query`} children={<Search/>}/>

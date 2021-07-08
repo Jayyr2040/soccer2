@@ -4,7 +4,6 @@ import Webpage from './Webpage'
 import Form from './Form';
 function Header() {
 
-
 const colorMyWord = (word) => {
 const colorArr = ["Red","#FF8C00","#FFEE00","#4DE94C","#3783FF","#4815AA","#Red","#FF8C00"];
 const titleArr = word.split("")
@@ -16,22 +15,21 @@ const titleColored = titleArr.map((item,index) => {
 
     return (
         <>
-            <div className="nav-item" style={{width: "18%"}}><span className="nav-logo">
+            <div className="nav-item header1"><span className="nav-logo">
                 <Link to={Webpage.headlines} className="titleLink">
                     {colorMyWord("MySoccer")}
                 </Link>
                 </span>
             </div>
-            <div className="nav-item" style={{width: "10%"}}><span className="nav-logo">
+            <div className="nav-item header2"><span className="nav-logo">
                 <Link to={Webpage.about} className="titleLink">
                     {colorMyWord("About")}
                 </Link>
                 </span>
             </div>
-            <div className="nav-item" style={{width: "50%", marginLeft:"100px" }}>
+            <div className="nav-item header3">
                 <Form/>
             </div>
-    
         </>
     );
 }

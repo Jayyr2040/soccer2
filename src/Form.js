@@ -8,23 +8,22 @@ const Form = () => {
     const [query, setQuery] = React.useState("");
 
 return (
-    <div style={{display:"flex", alignItems:"center", background: "#f1f3f4",height:"48px",borderRadius:"10px",width:"100%",position: "relative"}}> 
-    <div style={{width:"10%"}}>
-    {/* <Link to={{pathname: "/headlines/Search/", data: { query } }}> */}
-    <Link to={`/headlines/Search/${query}`}>
-    <div style={{textAlign:"center", verticalAlign:"middle"}}><Search style={{verticalAlign:"middle"}}/></div> 
-    </Link>
-    </div> 
-    <div style={{width:"70%"}}>
-    <input style={{background: "transparent", border:"0px",width:"100%"}} value={query} placeholder="Enter football club or figures?" type="text" onChange={(event) => {setQuery(event.target.value); console.log("Onchange - ",event.target.value);}}/>
-    </div>
-    <div style={{width:"5%", position: "absolute", right: "20px", paddingTop:"10px", cursor:"pointer"}}>
-    <ClearIcon onClick={()=> {setQuery("")}} />
-    </div>
+    <div className='form1'> 
+            <div className='form2'>
+                    {/* <Link to={{pathname: "/headlines/Search/", data: { query } }}> */}
+                    <Link to={`/headlines/Search/${query}`}>
+                    <div className='form3'><Search className='form4'/></div> 
+                    </Link>
+            </div> 
+            <div className='form5'>
+                    <input className='form6' value={query} placeholder="Enter football club or figures?" type="text" onChange={(event) => {setQuery(event.target.value); console.log("Onchange - ",event.target.value);}}/>
+            </div>
+            <div className='form7'>
+                    <ClearIcon onClick={()=> {setQuery("")}} />
+            </div>
     </div>
 
 )
-
 }
 
 export default Form

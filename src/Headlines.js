@@ -24,18 +24,15 @@ function Headlines() {
       setNews(data);
   };
 
-
   return (
-    <>
-        
-            <div style={{ width:"100%"}}>
+    <> 
+            <div className="headlines1">
             <ApiCall url={WebUrl.highlights} handleApiCall={handleApiCall} isFirstLoad={isFirstLoad}/>
             <ApiCall url={WebUrl.headlines} handleApiCall={handleApiCallNews} isFirstLoad={isFirstLoadNews}/>
             <News news={news} url={WebUrl.headlines} count={0}/>
-            <span style={{ display: "block", width: "100px" }}></span>
+            <span className="headlines2"></span>
             <Highlights highlights={highlights}/>
             </div>
-    
     </>
   );
 }
