@@ -11,7 +11,7 @@ const Highlights = (props) => {
     return (
       <>
       <li>
-        <div style={{flexDirection: "row", display: "flex", height: "300px",width:"100%"}}>
+        <div style={{flexDirection: "row", display: "flex", height: "350px",width:"100%"}}>
         <div style={{width:"50%"}}>
             <h4> Match: {props?.highlights?.[counter]?.title}</h4>
             <span style={{ display: "block", width: "20px" }}></span>
