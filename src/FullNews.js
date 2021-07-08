@@ -10,7 +10,7 @@ function FullNews(props) {
 
     let list = (cNewsData.articles).map((item,index) => {
         return (
-                    <div key={index} style={{display: "flex",flexWrap: "wrap",flexDirection: "row", borderRadius:"10px",border: "1px solid #e3dcdc", width: "48%", height: "150px", marginBottom: "1rem", marginRight: "1em"}}>
+                    <div className="borderOrange" key={index} style={{display: "flex",flexWrap: "wrap",flexDirection: "row", borderRadius:"10px", width: "48%", height: "150px", marginBottom: "1rem", marginRight: "1em"}}>
                     <div style={{width:"69%",marginTop: "10px"}}>
                     <a href={item?.url}><span> News: {item?.title}</span></a>
                     <span style={{ display: "block", marginBottom: "50px" }}></span>
@@ -24,7 +24,7 @@ function FullNews(props) {
                     {<Moment fromNow>{item?.publishedAt}</Moment>}
                     </p>
                     </div>
-                    <div style={{border: "1px solid #e3dcdc",width:"30%" }}>
+                    <div style={{width:"30%" }}>
                     <img src={item?.image} alt=""  width="100%" height="100%" style={{borderRadius:"10px"}}/>
                     </div>
                     </div>

@@ -11,15 +11,15 @@ const Highlights = (props) => {
     return (
       <>
       <li>
-        <div style={{border: "1px solid red", flexDirection: "row", display: "flex", height: "300px",width:"100vw"}}>
+        <div style={{flexDirection: "row", display: "flex", height: "300px",width:"100vw"}}>
         <div style={{width:"40%"}}>
             <h4> Match: {props?.highlights?.[counter]?.title}</h4>
             <span style={{ display: "block", width: "20px" }}></span>
-            <div style={{fontSize:"12px",border: "1px solid #e3dcdc"}}>
+            <div style={{fontSize:"12px"}}>
             Competition: {props?.highlights?.[counter]?.competition?.name}
             <span style={{ display: "inline-block", width: "10px" }}></span>
             </div>
-            <div style={{fontSize:"12px",border: "1px solid #e3dcdc"}}>
+            <div style={{fontSize:"12px"}}>
             .
             <span style={{ display: "inline-block", width: "5px" }}></span>
             Published:
@@ -57,16 +57,16 @@ const Highlights = (props) => {
       <div>
         <h3>Soccer highlights</h3>
       </div>
-      <div style={{border: "1px solid orange", borderRadius:"10px", alignContent:"flex-start", justifyContent:"start-end", flexFlow: "column wrap", display:"flex",position: "relative",overflow: "auto"}}>
+      <div className="borderOrange" style={{borderRadius:"10px", alignContent:"flex-start", justifyContent:"start-end", flexFlow: "column wrap", display:"flex",position: "relative",overflow: "auto"}}>
           <ul>
             {articles(props, 0)}
             {articles(props, 1)}
             {articles(props, 2)}
           </ul>
-        <div style={{ border: "1px solid #e3dcdc", color:"blue"}}>
+        <div style={{ color:"blue"}}>
           <Link to={{pathname: "/headlines/FullHighlightsList/", data: { props } }}>
           <CollectionsIcon style={{fontSize:"18px"}}/>
-          <div style={{fontSize:"15px",border: "1px solid red"}}>View Full Highlights list</div>
+          <div style={{fontSize:"15px"}}>View Full Highlights list</div>
           </Link>
         </div>
       </div>

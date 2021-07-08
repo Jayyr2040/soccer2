@@ -13,13 +13,13 @@ function FullHighlightsList(props) {
 
     let list = (props.location.data?.props.highlights).map((item,index) => {
         return (
-        <div style={{ border:"1px solid red", width:"20%", height:"300px", margin:"5px", cursor:"pointer",borderRadius:"10px"}} key={index} onClick={()=>handleChange(item.embed)}>
-        <div style={{border:"1px solid green", height:"30%"}}>
+        <div className="borderOrange" style={{width:"20%", height:"300px", margin:"5px", cursor:"pointer",borderRadius:"10px"}} key={index} onClick={()=>handleChange(item.embed)}>
+        <div style={{height:"30%"}}>
         <strong>Match: {item.title}</strong>
         <br></br><small>Competition: {item.competition.name}</small>
         <br></br><small>Published: {<Moment fromNow>{item.date}</Moment>}</small>
         </div>
-        <div style={{border:"1px solid blue",height:"68%"}}>
+        <div style={{height:"68%"}}>
         <div style={{background:"yellow",borderRadius:"10px", height:"100%"}}>
         <img src={item.thumbnail} alt="" width="100%" height="100%"/>
             </div>  

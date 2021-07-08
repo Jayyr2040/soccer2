@@ -84,3 +84,23 @@ div:focus {
 textarea:focus, input:focus{
   outline: none;
 }
+
+.borderBlue {
+  border: 1px solid blue
+}
+
+.borderGrey {
+  border: 1px solid #e3dcdc
+}
+
+.borderRed {
+  border: 1px solid red
+}
+
+.borderGreen {
+  border: 1px solid green
+}
+
+.borderOrange {
+  border: 2px solid orange
+}

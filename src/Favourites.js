@@ -28,9 +28,9 @@ function Favourites() {
   return (
     <>
         
-            <div style={{ border:"1px solid #e3dcdc", width:"100%"}}>
+            <div style={{width:"100%"}}>
             <ApiCall url={WebUrl.highlights} handleApiCall={handleApiCall} isFirstLoad={isFirstLoad}/>
-           <ApiCall url={WebUrl.favourites} handleApiCall={handleApiCallNews} isFirstLoad={isFirstLoadNews}/>
+           {/* <ApiCall url={WebUrl.favourites} handleApiCall={handleApiCallNews} isFirstLoad={isFirstLoadNews}/> */}
             <News news={news} url={WebUrl.favourites}  count={1}/>
             <span style={{ display: "block", width: "100px" }}></span>
             <Highlights highlights={highlights}/>
