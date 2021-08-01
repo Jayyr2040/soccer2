@@ -30,7 +30,7 @@ List the ready features here:
 - Watch video highlights of recent football matches
 
 ## Screenshots
-![Example screenshot](./reactapp.PNG)
+![Example screenshot](https://i.ibb.co/28CF7jX/MySoccer.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Setup
